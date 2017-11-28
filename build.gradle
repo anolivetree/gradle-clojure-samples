@@ -18,4 +18,10 @@ dependencies {
   compile 'org.clojure:clojure:1.8.0'
   testCompile 'junit:junit:4.12'
   devCompile 'org.clojure:tools.namespace:0.3.0-alpha4'
+  compile "http-kit:http-kit:2.2.0"
 }
+
+compileClojure {
+  options.aotCompile = true
+}
+
